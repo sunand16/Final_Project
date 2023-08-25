@@ -1,6 +1,6 @@
 const Main =()=>{
     return (
-            <main>This is Main</main>
+            <main className="mainSection">This is Main Section</main>
 
     )
 }
