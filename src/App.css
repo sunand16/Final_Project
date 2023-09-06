@@ -15,10 +15,11 @@ nav {
 /*Common Elements*/
 a{
   text-decoration: none;
-  color: black;
+  color: rgb(73, 71, 71);
 }
 li {
   list-style: none;
+  font-weight: 600 ;
 }
 
 /*Header & Nav Section*/
@@ -41,8 +42,8 @@ li {
 
 /* Footer Section */
 #footerLogo{
-  height: 25px;
-  padding: 70px;
+  height: 135px;
+  padding: 20px;
 }
 .footerNav{
   display: flex;

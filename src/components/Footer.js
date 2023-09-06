@@ -37,7 +37,7 @@ const Footer =()=>{
 
 
         <div className="footerNav">
-       <img src="../images/LittleLemonLogo.jpeg" id ="footerLogo" alt="FooterLogo"></img>
+       <img src="../images/FooterLogo.png" id ="footerLogo" alt="FooterLogo"></img>
             <ul>
 
                 <li id="footerSectionHeading">Doormat Navigation</li>
@@ -54,9 +54,9 @@ const Footer =()=>{
             <ul>
 
                 <li id="footerSectionHeading">Contact</li>
-                <li><a href="/#">Home</a></li>
-                <li><a href="/#">About</a></li>
-                <li><a href="/#">Menu</a></li>
+                <li><a href="/#">Address</a></li>
+                <li><a href="/#">Phone</a></li>
+                <li><a href="/#">Email</a></li>
 
             </ul>
         {/* </div> */}
@@ -64,9 +64,9 @@ const Footer =()=>{
             <ul>
 
                 <li id="footerSectionHeading">Social Media Links</li>
-                <li><a href="/#">Home</a></li>
-                <li><a href="/#">About</a></li>
-                <li><a href="/#">Menu</a></li>
+                <li><a href="/#">Facebook</a></li>
+                <li><a href="/#">Instagram</a></li>
+                <li><a href="/#">Twitter</a></li>
 
             </ul>
         </div>
