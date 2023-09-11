@@ -1,3 +1,9 @@
+//Home should go to home page with all components
+//About should go to Chicago backstory comp
+//Menu should go to Specials page
+
+
+
 const Nav =()=>{
     return (
     <nav>

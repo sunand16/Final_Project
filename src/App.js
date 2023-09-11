@@ -9,8 +9,10 @@ import Footer from './components/Footer';
 function App() {
   return (
    <>
+    {/* NEED TO ADD HOMEPAGE COMPONENT HERE INSTEAD OF ALL INDIVIDUAL COMPONENTS */}
      <Header/>
      {/* <Nav/> */}
+    
      <Main />
      <Footer/>
    </>
