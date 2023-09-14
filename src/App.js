@@ -12,7 +12,6 @@ function App() {
     {/* NEED TO ADD HOMEPAGE COMPONENT HERE INSTEAD OF ALL INDIVIDUAL COMPONENTS */}
      <Header/>
      {/* <Nav/> */}
-    
      <Main />
      <Footer/>
    </>
