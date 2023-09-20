@@ -3,11 +3,7 @@
 header {
   margin: 1px;
 }
-main{
-  background-color: #495E57;
-  padding: 1000px;
-  color:antiquewhite;
-}
+
 nav {
   background-color: white;
 }
@@ -38,7 +34,13 @@ li {
     padding: 20px;
 }
 
-
+/* Component Sections */
+.Section{
+  background-color: #495E57;
+  padding: 100px;
+  color:antiquewhite;
+  text-align: center;
+}
 
 /* Footer Section */
 #footerLogo{

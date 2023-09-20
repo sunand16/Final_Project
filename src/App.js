@@ -1,20 +1,23 @@
 //import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import Header from './components/Header';
+//import Header from './components/Header';
 //import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+//import Main from './components/Main';
+//import Footer from './components/Footer';
+import HomePage from './components/Homepage';
 
 function App() {
   return (
    <>
     {/* NEED TO ADD HOMEPAGE COMPONENT HERE INSTEAD OF ALL INDIVIDUAL COMPONENTS */}
-     <Header/>
-     {/* <Nav/> */}
+     {/* <Header/>
+     <Nav/>
      <Main />
-     <Footer/>
-   </>
+     <Footer/> */}
+
+     <HomePage/>
+  </>
   );
 }
 

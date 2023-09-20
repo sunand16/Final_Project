@@ -3,7 +3,7 @@
 
 const CustomerSay = () => {
     return (
-        <h2>This is Testimonals section</h2>
+        <h2 className="Section">This is Testimonals Section</h2>
     )
 }
 

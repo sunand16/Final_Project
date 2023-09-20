@@ -3,7 +3,7 @@
 
 const CallToAction =()=>{
     return(
-        <h2>This is CallToAction Page</h2>
+        <h2 className="Section">This is CallToAction Section</h2>
     )
     }
 

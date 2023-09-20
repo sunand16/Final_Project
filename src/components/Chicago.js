@@ -3,7 +3,7 @@
 
 const Chicago = () => {
     return (
-        <h2>This is About the Restaurant section</h2>
+        <h2 className="Section">This is About Section</h2>
     )
 }
 

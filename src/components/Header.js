@@ -7,7 +7,7 @@ const Header =()=>{
            {/* <header>This is Header</header> */}
            {/* <img src="../images/LittleLemonLogo.jpeg" id ="headerLogo" alt="Logo"/> */}
           <Nav/>
-           </header>
+        </header>
     )
 }
 export default Header;
