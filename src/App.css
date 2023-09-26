@@ -8,6 +8,8 @@ nav {
   background-color: white;
 }
 
+
+
 /*Common Elements*/
 a{
   text-decoration: none;
@@ -17,6 +19,24 @@ li {
   list-style: none;
   font-weight: 600 ;
 }
+
+#logo{
+  color: #f4ce14;
+  font-family: 'Markazi Text';
+  text-align: start;
+}
+#subHeading{
+  font-family: 'Markazi Text';
+  text-align: start;
+
+}
+#logoDesc{
+  font-family: 'Markazi Text';
+  text-align: start;
+
+}
+
+
 
 /*Header & Nav Section*/
 #siteLogo{
@@ -34,6 +54,9 @@ li {
     padding: 20px;
 }
 
+
+
+
 /* Component Sections */
 .Section{
   background-color: #495E57;
@@ -41,6 +64,9 @@ li {
   color:antiquewhite;
   text-align: center;
 }
+
+
+
 
 /* Footer Section */
 #footerLogo{
@@ -60,7 +86,20 @@ li {
 }
 
 
+/* Button Styles */
 
+#tableButton {
+  background-color: #f4ce14;
+  color: black;
+  font-weight:bold;
+}
+
+
+/* Image Styles */
+
+#displayImage{
+  padding: 50px;
+}
 
 
 
