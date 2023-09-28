@@ -20,21 +20,7 @@ li {
   font-weight: 600 ;
 }
 
-#logo{
-  color: #f4ce14;
-  font-family: 'Markazi Text';
-  text-align: start;
-}
-#subHeading{
-  font-family: 'Markazi Text';
-  text-align: start;
 
-}
-#logoDesc{
-  font-family: 'Markazi Text';
-  text-align: start;
-
-}
 
 
 
@@ -65,6 +51,26 @@ li {
   text-align: center;
 }
 
+/* CallToAction Component section */
+.LogoArea{
+  position: relative;
+  padding-left: 500px;
+}
+.LogoArea h1{
+  color: #f4ce14;
+  font-family: 'Markazi Text';
+  text-align: start;
+}
+.LogoArea h3{
+  font-family: 'Markazi Text';
+  text-align: start;
+
+}
+.LogoArea p{
+  font-family: 'Markazi Text';
+  text-align: start;
+
+}
 
 
 
@@ -92,13 +98,21 @@ li {
   background-color: #f4ce14;
   color: black;
   font-weight:bold;
+  border: none;
+}
+
+#ReserveTable{
+  position: absolute;
+  padding-left: 500px;
 }
 
 
 /* Image Styles */
 
 #displayImage{
-  padding: 50px;
+  padding-left: 500px;
+  padding-bottom: 600px;
+
 }
 
 
