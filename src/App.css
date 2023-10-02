@@ -44,7 +44,33 @@ li {
 
 
 /* Component Sections */
-.Section{
+/* .Section{
+  background-color: #495E57;
+  padding: 100px;
+  color:antiquewhite;
+  text-align: center;
+} */
+
+.ReservationSection{
+  background-color: #495E57;
+  padding: 100px;
+  color:antiquewhite;
+  text-align: center;
+}
+.SpecialsSection{
+  background-color: #495E57;
+  padding: 100px;
+  margin-top: 8px;
+  color:antiquewhite;
+  text-align: center;
+}
+.TestimonalsSection{
+  background-color: #495E57;
+  padding: 100px;
+  color:antiquewhite;
+  text-align: center;
+}
+.AboutSection{
   background-color: #495E57;
   padding: 100px;
   color:antiquewhite;
@@ -110,10 +136,9 @@ li {
 /* Image Styles */
 
 #displayImage{
-  padding-left: 500px;
-  padding-bottom: 600px;
-
-}
+  padding-left: 960px;
+  flex-flow: column;
+  }
 
 
 
@@ -136,6 +161,10 @@ li {
       width: 100%;
       display: block;
       margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
     }
 	}
 

@@ -3,7 +3,7 @@
 
 const Specials = () => {
     return (
-        <h2 className="Section">This is Specials Section</h2>
+        <h2 className="SpecialsSection">This is Specials Section</h2>
     )
 }
 
