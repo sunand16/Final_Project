@@ -8,8 +8,6 @@ nav {
   background-color: white;
 }
 
-
-
 /*Common Elements*/
 a{
   text-decoration: none;
@@ -22,12 +20,13 @@ li {
 
 
 
-
+/* *************Main Sections**********************  */
 
 /*Header & Nav Section*/
 #siteLogo{
   height: 39px;
   width: 100px;
+  padding-right: 10px;
 }
 .headerNav{
     display: flex;
@@ -40,7 +39,22 @@ li {
     padding: 20px;
 }
 
-
+/* Footer Section */
+#footerLogo{
+  height: 135px;
+  padding: 20px;
+}
+.footerNav{
+  display: flex;
+  background-color: white;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+#footerSectionHeading{
+  font-weight: bold;
+  color: #495E57;
+}
 
 
 /* Component Sections */
@@ -51,14 +65,20 @@ li {
   text-align: center;
 } */
 
+
+/* **************Section Areas************** */
+
+
 .ReservationSection{
+  display: flex;
   background-color: #495E57;
   padding: 100px;
   color:antiquewhite;
-  text-align: center;
+  height: 420px;
+
 }
 .SpecialsSection{
-  background-color: #495E57;
+  background-color: white;
   padding: 100px;
   margin-top: 8px;
   color:antiquewhite;
@@ -76,6 +96,10 @@ li {
   color:antiquewhite;
   text-align: center;
 }
+
+
+/* **********Component Stylings************* */
+
 
 /* CallToAction Component section */
 .LogoArea{
@@ -97,26 +121,15 @@ li {
   text-align: start;
 
 }
-
-
-
-/* Footer Section */
-#footerLogo{
-  height: 135px;
-  padding: 20px;
-}
-.footerNav{
-  display: flex;
-  background-color: white;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 50px;
-}
-#footerSectionHeading{
-  font-weight: bold;
-  color: #495E57;
+.displayImage{
+  padding-left: 270px;
 }
 
+.displayImage img{
+  float: right;
+  height: 350px;
+  border-radius: 10px;
+}
 
 /* Button Styles */
 
@@ -128,21 +141,23 @@ li {
 }
 
 #ReserveTable{
-  position: absolute;
-  padding-left: 500px;
+  padding-top: 35px;
 }
 
-
-/* Image Styles */
-
-#displayImage{
-  padding-left: 960px;
-  flex-flow: column;
-  }
+/* Specials Section */
 
 
 
-/*Responsive Section*/
+
+
+
+
+
+
+
+
+
+/* ***************************Responsive Section Styling************************ */
 
 @media screen and (max-width: 700px) {
 
@@ -162,8 +177,11 @@ li {
       display: block;
       margin-bottom: 20px;
     }
-    img {
-      max-width: 100%;
+    .ReservationSection{
+      display: block;
+    }
+    .ReservationSection img{
+      width: 100%;
       height: auto;
     }
 	}

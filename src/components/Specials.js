@@ -3,7 +3,11 @@
 
 const Specials = () => {
     return (
-        <h2 className="SpecialsSection">This is Specials Section</h2>
+        <div>
+            <div className="SpecialsSection">
+            <h2 >Specials</h2>
+            </div>
+        </div>
     )
 }
 
