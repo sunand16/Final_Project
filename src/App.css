@@ -24,8 +24,8 @@ li {
 
 /*Header & Nav Section*/
 #siteLogo{
-  height: 39px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   padding-right: 10px;
 }
 .headerNav{
@@ -72,7 +72,8 @@ li {
 .ReservationSection{
   display: flex;
   background-color: #495E57;
-  padding: 100px;
+  padding-left: 80px;
+  padding-top: 40px;
   color:antiquewhite;
   height: 420px;
 
@@ -122,12 +123,13 @@ li {
 
 }
 .displayImage{
-  padding-left: 270px;
+  padding-left: 250px;
 }
 
 .displayImage img{
   float: right;
-  height: 350px;
+  height: 400px;
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -141,7 +143,7 @@ li {
 }
 
 #ReserveTable{
-  padding-top: 35px;
+  padding-top: 70px;
 }
 
 /* Specials Section */
@@ -159,7 +161,7 @@ li {
 
 /* ***************************Responsive Section Styling************************ */
 
-@media screen and (max-width: 700px) {
+ @media screen and (max-width: 700px) {
 
 		.headerNav{
       width: 50%;
@@ -172,27 +174,22 @@ li {
       display: block;
       margin-bottom: 20px;
     }
-    .mainSection{
-      width: 100%;
+    .LogoArea p{
+      width: auto;
       display: block;
       margin-bottom: 20px;
     }
+  }
+
+  @media screen and (max-width: 700px) {
+
     .ReservationSection{
-      display: block;
+      flex-direction: column;
+      height: fit-content;
+      width: max-content;
+      align-content: initial;
     }
-    .ReservationSection img{
-      width: 100%;
-      height: auto;
-    }
-	}
-
-
-
-
-
-
-
-
+  }
 
 
 

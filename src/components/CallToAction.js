@@ -13,7 +13,7 @@ const CallToAction =()=>{
             </div>
           </div>
             <div className="displayImage">
-                  <img src="../images/DisplayImage.jpeg"  alt="Display Image"></img>
+                  <img src="../images/DisplayImage.jpeg"  alt="Display"></img>
             </div>
           </div>
     )
