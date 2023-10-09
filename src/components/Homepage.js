@@ -7,7 +7,7 @@ import Header from "./Header";
 //import Main from "./Main";
 import CallToAction from "./CallToAction";
 import Specials from "./Specials";
-import CustomerSay from "./CustomersSay";
+import CustomersSay from "./CustomersSay";
 import Chicago from "./Chicago";
 
 
@@ -17,7 +17,7 @@ return(
     <Header/>
     <CallToAction/>
     <Specials/>
-    <CustomerSay/>
+    <CustomersSay/>
     <Chicago/>
     <Footer/>
     </>

@@ -1,10 +1,10 @@
 //Testimonals section
 
 
-const CustomerSay = () => {
+const CustomersSay = () => {
     return (
         <h2 className="TestimonalsSection">This is Testimonals Section</h2>
     )
 }
 
-export default CustomerSay;
+export default CustomersSay;

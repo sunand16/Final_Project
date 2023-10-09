@@ -3,7 +3,6 @@
 header {
   margin: 1px;
 }
-
 nav {
   background-color: white;
 }
@@ -76,7 +75,6 @@ li {
   padding-top: 40px;
   color:antiquewhite;
   height: 420px;
-
 }
 .SpecialsSection{
   background-color: white;
@@ -102,7 +100,7 @@ li {
 /* **********Component Stylings************* */
 
 
-/* CallToAction Component section */
+/* ******CallToAction Component section******** */
 .LogoArea{
   position: relative;
   padding-left: 500px;
@@ -115,22 +113,19 @@ li {
 .LogoArea h3{
   font-family: 'Markazi Text';
   text-align: start;
-
 }
 .LogoArea p{
   font-family: 'Markazi Text';
   text-align: start;
-
 }
 .displayImage{
   padding-left: 250px;
 }
-
 .displayImage img{
   float: right;
   height: 400px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 /* Button Styles */
@@ -139,17 +134,32 @@ li {
   background-color: #f4ce14;
   color: black;
   font-weight:bold;
+  border-radius: 16px;
   border: none;
 }
-
 #ReserveTable{
   padding-top: 70px;
 }
 
-/* Specials Section */
 
 
 
+/* *******Specials Section******** */
+
+.cardArea{
+  display: flex;
+  flex-flow: row;
+  padding: 50px;
+
+}
+.card{
+  display: flex;
+  width: 300px;
+}
+.card img{
+  height: 200px;
+  width: 300px;
+}
 
 
 
