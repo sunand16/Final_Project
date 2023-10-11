@@ -6,19 +6,19 @@ import Chicago from "./Chicago";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 
-const Main =()=>{
+const Main = () => {
     return (
         <div className="NavigationRouting">
             <div>
-            <BrowserRouter>
-            <Routes>
-               <Route path="/" element={<HomePage />}></Route>
-               <Route path="/booking" element={<BookingPage />}></Route>
-               <Route path="/about" element={<Chicago/>}></Route>
-               <Route path="/specials" element={<Specials/>}></Route>
-               <Route path="/testimonals" element={<CustomersSay/>}></Route>
-            </Routes>
-            </BrowserRouter>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<HomePage />}></Route>
+                        <Route path="/booking" element={<BookingPage />}></Route>
+                        <Route path="/about" element={<Chicago />}></Route>
+                        <Route path="/specials" element={<Specials />}></Route>
+                        <Route path="/testimonals" element={<CustomersSay />}></Route>
+                    </Routes>
+                </BrowserRouter>
             </div>
         </div>
     )

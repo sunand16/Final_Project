@@ -11,17 +11,17 @@ import CustomersSay from "./CustomersSay";
 import Chicago from "./Chicago";
 
 
-const HomePage =()=>{
-return(
-    <>
-    <Header/>
-    <CallToAction/>
-    <Specials/>
-    <CustomersSay/>
-    <Chicago/>
-    <Footer/>
-    </>
-)
+const HomePage = () => {
+    return (
+        <>
+            <Header />
+            <CallToAction />
+            <Specials />
+            <CustomersSay />
+            <Chicago />
+            <Footer />
+        </>
+    )
 
 }
 

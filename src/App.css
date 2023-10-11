@@ -1,20 +1,21 @@
-
 /*Main Element Sections*/
 header {
   margin: 1px;
 }
+
 nav {
   background-color: white;
 }
 
 /*Common Elements*/
-a{
+a {
   text-decoration: none;
   color: rgb(73, 71, 71);
 }
+
 li {
   list-style: none;
-  font-weight: 600 ;
+  font-weight: 600;
 }
 
 
@@ -22,35 +23,39 @@ li {
 /* *************Main Sections**********************  */
 
 /*Header & Nav Section*/
-#siteLogo{
+#siteLogo {
   height: 50px;
   width: 150px;
   padding-right: 10px;
 }
-.headerNav{
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
+
+.headerNav {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.headerNav > li{
-    display: flex;
-    padding: 20px;
+
+.headerNav>li {
+  display: flex;
+  padding: 20px;
 }
 
 /* Footer Section */
-#footerLogo{
+#footerLogo {
   height: 135px;
   padding: 20px;
 }
-.footerNav{
+
+.footerNav {
   display: flex;
   background-color: white;
   align-items: flex-start;
   justify-content: center;
   padding: 50px;
 }
-#footerSectionHeading{
+
+#footerSectionHeading {
   font-weight: bold;
   color: #495E57;
 }
@@ -68,31 +73,36 @@ li {
 /* **************Section Areas************** */
 
 
-.ReservationSection{
+.ReservationSection {
   display: flex;
   background-color: #495E57;
   padding-left: 80px;
   padding-top: 40px;
-  color:antiquewhite;
+  color: antiquewhite;
   height: 420px;
 }
-.SpecialsSection{
+
+.SpecialsSection {
   background-color: white;
-  padding: 100px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: 8px;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: center;
 }
-.TestimonalsSection{
+
+.TestimonalsSection {
   background-color: #495E57;
   padding: 100px;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: center;
 }
-.AboutSection{
+
+.AboutSection {
   background-color: #495E57;
   padding: 100px;
-  color:antiquewhite;
+  color: antiquewhite;
   text-align: center;
 }
 
@@ -101,27 +111,32 @@ li {
 
 
 /* ******CallToAction Component section******** */
-.LogoArea{
+.LogoArea {
   position: relative;
   padding-left: 500px;
 }
-.LogoArea h1{
+
+.LogoArea h1 {
   color: #f4ce14;
   font-family: 'Markazi Text';
   text-align: start;
 }
-.LogoArea h3{
+
+.LogoArea h3 {
   font-family: 'Markazi Text';
   text-align: start;
 }
-.LogoArea p{
+
+.LogoArea p {
   font-family: 'Markazi Text';
   text-align: start;
 }
-.displayImage{
+
+.displayImage {
   padding-left: 250px;
 }
-.displayImage img{
+
+.displayImage img {
   float: right;
   height: 400px;
   width: 300px;
@@ -133,11 +148,12 @@ li {
 #tableButton {
   background-color: #f4ce14;
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 16px;
   border: none;
 }
-#ReserveTable{
+
+#ReserveTable {
   padding-top: 70px;
 }
 
@@ -146,23 +162,78 @@ li {
 
 /* *******Specials Section******** */
 
-.cardArea{
+.Specials {
+  background-color: white;
+  padding-left: 500px;
+  padding-right: 450px;
   display: flex;
-  flex-flow: row;
-  padding: 50px;
+}
 
+.SpecialsSection {
+  align-items: center;
+  padding: 40px;
 }
-.card{
+
+.cardSection {
   display: flex;
-  width: 300px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.card img{
+
+.cardArea {
+  display: flex;
+  flex-flow: wrap;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  border: none;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #EDEFEE;
+}
+
+.card img {
   height: 200px;
-  width: 300px;
+  width: auto;
+  border: none;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
 }
 
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.mainContextArea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 530px;
+}
 
+.mainContextArea h2 {
+  float: left;
+  color: black;
+  padding-left: 30px;
+}
+
+.mainContextArea button {
+  float: right;
+  background-color: #f4ce14;
+  color: black;
+  font-weight: bold;
+  border-radius: 16px;
+  border: none;
+  /* display: flex; */
+  /* padding: 100px; */
+}
 
 
 
@@ -171,38 +242,84 @@ li {
 
 /* ***************************Responsive Section Styling************************ */
 
- @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-		.headerNav{
-      width: 50%;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .footerNav{
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .LogoArea p{
-      width: auto;
-      display: block;
-      margin-bottom: 20px;
-    }
+  .headerNav {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 1350px) {
+  .footerNav {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 
-    .ReservationSection,
-    .LogoArea,
-    .ReserveTable,
-    .displayImage {
+  .LogoArea p {
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  .ReservationSection,
+  .LogoArea,
+  .ReserveTable,
+  .displayImage {
+    flex-direction: column;
+    padding: inherit;
+    height: fit-content;
+    align-content: initial;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  .Specials,
+  .SpecialsSection,
+  .cardSection,
+  .cardArea {
+    flex-direction: column;
+    padding: inherit;
+    height: fit-content;
+    align-content: initial;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1810px) {
+
+  .mainContextArea,
+  .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 2500px) {
+  .Specials {
+    padding-top: 20px;
+  }
+}
+
+/* @media screen and (max-width: 10px) {
+    .Specials{
+      padding-top: 100px;
+    }
+  } */
+
+/* @media screen and (min-width:10px){
+    .mainContextArea,
+    .mainContent{
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
-      padding:inherit ;
-      height: fit-content;
-      align-content: initial;
+      align-items: center;
     }
-  }
-
-
-
+  } */

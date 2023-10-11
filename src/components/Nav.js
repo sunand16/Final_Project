@@ -4,13 +4,13 @@
 import { Link } from "react-router-dom";
 
 
-const Nav =()=>{
+const Nav = () => {
     return (
-    <nav>
-         {/* <nav>This is Nav</nav> */}
-         {/* <img src="../images/LittleLemonLogo.jpeg" id ="mainLogo" alt="Logo"/> */}
+        <nav>
+            {/* <nav>This is Nav</nav> */}
+            {/* <img src="../images/LittleLemonLogo.jpeg" id ="mainLogo" alt="Logo"/> */}
             <ul className="headerNav">
-                <li><img src="../images/LittleLemonLogo.jpeg" id ="siteLogo" alt="Logo"/></li>
+                <li><img src="../images/LittleLemonLogo.jpeg" id="siteLogo" alt="Logo" /></li>
                 <li><Link href="/#">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link href="/#">Menu</Link></li>
@@ -18,7 +18,7 @@ const Nav =()=>{
                 <li><Link href="/#">Order Online</Link></li>
                 <li><Link href="/#">Login</Link></li>
             </ul>
-    </nav>
+        </nav>
 
     )
 }
