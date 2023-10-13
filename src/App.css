@@ -257,23 +257,64 @@ li {
 /* *******Testimonals Section******** */
 
 
-.testimonalContentArea{
+/* .reviewArea{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px;
-  justify-content: space-evenly;
-}
-.testimonalCardArea{
+} */
+/* .testimonalCardArea{
   padding: 10px;
-}
+} */
 
-.rating{
+.testimonalArea{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.reviewArea{
   background-color: #EDEFEE;
   display: flex;
-  padding: 50px;
+  padding: 10px;
   flex-direction: column;
+}
+.ratingArea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profileArea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* .ratingContext {
+  display: flex;
+  flex-direction: column;
+} */
+
+.ratingArea h3,h5{
+  color:black;
+  font-family: karla;
+  font-weight: bold;
+  font-size: 14px;
+}
+.reviewArea h6{
+  color:black;
+  font-family: karla;
+  font-size: 14px;
+}
+#ratingStar img{
+  height: 30px;
+  width: 30px;
+}
+#profile{
+  height: 70px;
 }
 
 
