@@ -206,19 +206,20 @@ li {
   border-top-left-radius: 16px;
 }
 
-.card h3{
+.card h3 {
   color: black;
   font-family: 'Markazi Text';
   font-size: 24;
   font-weight: 550;
 }
 
-.card h4{
+.card h4 {
   color: #EE9972;
   font-family: 'Karla';
   font-size: 16;
 }
-.card p{
+
+.card p {
   color: #495E57;
   font-family: 'Karla';
   font-size: 16;
@@ -254,68 +255,93 @@ li {
 }
 
 
+
+
 /* *******Testimonals Section******** */
 
 
-/* .reviewArea{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 40px;
-} */
-/* .testimonalCardArea{
-  padding: 10px;
-} */
 
-.testimonalArea{
+
+.testimonalArea {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
-.reviewArea{
+.TestimonalsSection h2{
+  color: black;
+  font-family: 'Markazi Text';
+  font-size: 36px;
+  font-weight: 550;
+
+}
+
+.reviewSection {
+  padding: 10px;
+}
+
+.reviewArea {
   background-color: #EDEFEE;
   display: flex;
-  padding: 10px;
+  padding: 25px;
   flex-direction: column;
 }
-.ratingArea{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.profileArea{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* .ratingContext {
-  display: flex;
-  flex-direction: column;
-} */
 
-.ratingArea h3,h5{
-  color:black;
+.ratingArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profileArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.ratingArea h3 {
+  color: black;
   font-family: karla;
   font-weight: bold;
   font-size: 14px;
+  padding: 10px;
+  text-align: left;
 }
-.reviewArea h6{
-  color:black;
+
+.profileArea h5 {
+  color: black;
+  font-family: karla;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.reviewArea h6 {
+  color: black;
   font-family: karla;
   font-size: 14px;
+  padding: 10px;
+  text-align: left;
 }
-#ratingStar img{
+
+#ratingStar img {
   height: 30px;
   width: 30px;
 }
-#profile{
-  height: 70px;
+
+#profile {
+  height: 60px;
 }
+
+.profileArea img {
+  display: flex;
+  border-style: solid;
+  border: black;
+}
+
 
 
 /* ***************************Responsive Section Styling************************ */
