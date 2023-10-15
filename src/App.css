@@ -346,38 +346,47 @@ li {
 
 /* **************************Chicago About Section******************************* */
 
-.AboutSection{
-  background-color:white;
-}
-.aboutContent{
+.AboutSection {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 }
-.aboutLogoArea{
+
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-left: 460px; */
+}
+
+.aboutLogoArea {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-right: 535px;
+  /* padding-right: 535px; */
   text-align: start;
 }
-.aboutLogoArea h3{
+
+.aboutLogoArea h3 {
   display: flex;
   text-align: left;
 }
 
-#aboutContext{
+#aboutContext {
   padding-top: 15px;
 }
-#aboutHeadings h1{
+
+#aboutHeadings h1 {
   color: black;
   font-family: 'Markazi Text';
-  font-size: 64;
+  /* font-size: 64; */
 }
-#aboutHeadings h3{
+
+#aboutHeadings h3 {
   color: black;
   font-family: 'Markazi Text';
-  font-size: 40;
+  /* font-size: 40; */
 }
 
 #aboutContext p {
@@ -386,14 +395,28 @@ li {
   font-weight: 400px;
   font-size: 20;
 }
-.aboutImageArea{
+
+.aboutImageArea {
   display: flex;
-  flex-direction: column;
-  justify-content: right;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
+.aboutDisplayImage1 img{
+height: 310px;
+width: 280px;
+border-radius: 16px;
+/* position: absolute;
+top: 2850px; */
+}
 
+.aboutDisplayImage2 img{
+  height: 310px;
+  width: 280px;
+  border-radius: 16px;
+  /* position: relative;
+  left: 80px; */
+  }
 
 
 /* ***************************Responsive Section Styling************************ */

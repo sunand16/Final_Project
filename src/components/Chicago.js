@@ -20,10 +20,10 @@ const Chicago = () => {
                 </div>
                 <div className="aboutImageArea">
                     <div className="aboutDisplayImage1">
-                        <img src="../images/DisplayImage.jpeg" alt="Display"></img>
+                        <img src="../images/chicago2.jpeg" id="aboutDisplayImage1" alt="Display"></img>
                     </div>
                     <div className="aboutDisplayImage2">
-                        <img src="../images/DisplayImage.jpeg" alt="Display"></img>
+                        <img src="../images/chicago1.jpeg" id="aboutDisplayImage2" alt="Display"></img>
                     </div>
                 </div>
             </div>
