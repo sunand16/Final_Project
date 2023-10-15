@@ -269,7 +269,8 @@ li {
   justify-content: center;
   position: relative;
 }
-.TestimonalsSection h2{
+
+.TestimonalsSection h2 {
   color: black;
   font-family: 'Markazi Text';
   font-size: 36px;
@@ -279,20 +280,20 @@ li {
 
 .reviewSection {
   padding: 10px;
+  width: 200px;
+  height: 210px;
 }
 
 .reviewArea {
   background-color: #EDEFEE;
   display: flex;
-  padding: 25px;
+  padding: 10px;
   flex-direction: column;
 }
 
 .ratingArea {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .profileArea {
@@ -307,7 +308,7 @@ li {
   font-family: karla;
   font-weight: bold;
   font-size: 14px;
-  padding: 10px;
+  padding: 9px;
   text-align: left;
 }
 
@@ -328,8 +329,8 @@ li {
 }
 
 #ratingStar img {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 19px;
 }
 
 #profile {
@@ -341,6 +342,57 @@ li {
   border-style: solid;
   border: black;
 }
+
+
+/* **************************Chicago About Section******************************* */
+
+.AboutSection{
+  background-color:white;
+}
+.aboutContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutLogoArea{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 535px;
+  text-align: start;
+}
+.aboutLogoArea h3{
+  display: flex;
+  text-align: left;
+}
+
+#aboutContext{
+  padding-top: 15px;
+}
+#aboutHeadings h1{
+  color: black;
+  font-family: 'Markazi Text';
+  font-size: 64;
+}
+#aboutHeadings h3{
+  color: black;
+  font-family: 'Markazi Text';
+  font-size: 40;
+}
+
+#aboutContext p {
+  font-family: 'Karla';
+  color: black;
+  font-weight: 400px;
+  font-size: 20;
+}
+.aboutImageArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
 
 
 
