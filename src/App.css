@@ -283,7 +283,11 @@ li {
 /* *******Testimonals Section******** */
 
 
-
+.reviewHeading{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .testimonalArea {
   padding: 10px;
@@ -418,9 +422,9 @@ li {
   font-size: 20;
 }
 
-.imageArea {
+/* .imageArea {
   padding: 10px;
-}
+} */
 
 .aboutImageArea {
   display: flex;
@@ -428,8 +432,12 @@ li {
   padding: 255px;
   position: relative;
 }
+.aboutDisplayImage{
+  /* width: 100%;
+  height: 300px; */
+}
 
-.aboutDisplayImage1 img {
+/* .aboutDisplayImage1 img {
   display: flex;
   flex-wrap: wrap;
   height: 338px;
@@ -450,10 +458,37 @@ li {
   border-radius: 16px;
   position: absolute;
   z-index: 2;
-  left: 210px;
-  top: -80px;
+  left: 185px;
+  top: -30px;
+  object-fit: cover;
+} */
+
+#aboutDisplayImage1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 338px;
+  width: 276px;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 30px;
   object-fit: cover;
 }
+
+#aboutDisplayImage2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 338px;
+  width: 276px;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 2;
+  left: 185px;
+  top: -30px;
+  object-fit: cover;
+}
+
 
 
 /* ***************************Responsive Section Styling************************ */
@@ -506,6 +541,15 @@ li {
   }
 }
 
+@media screen and (max-width: 1150px) {
+
+ .TestimonalsSection {
+    flex-direction: column;
+    padding: inherit;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 1810px) {
 
   .mainContextArea,
@@ -546,7 +590,7 @@ li {
   }
 }
 
-@media screen and (max-width :530px) {
+/* @media screen and (max-width :530px) {
 
   .imageArea,
   .aboutImageArea,
@@ -555,6 +599,35 @@ li {
 
     object-fit: scale-down;
     width: 50%;
+
+  }
+} */
+
+@media screen and (max-width :530px) {
+
+  .aboutDisplayImage ,
+  .imageContent,
+  .aboutImageArea {
+
+    width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+
+
+  }
+}
+
+@media screen and (max-width :971px) {
+
+  .imageContent {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: scale-down;
+    width: 50%;
+    padding: 150px; */
 
   }
 }
