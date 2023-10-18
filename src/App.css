@@ -206,24 +206,49 @@ li {
   border-top-left-radius: 16px;
 }
 
-.card h3 {
+
+.dishType {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.dishType h3 {
   color: black;
   font-family: 'Markazi Text';
-  font-size: 24;
+  font-size: 24px;
   font-weight: 550;
 }
 
-.card h4 {
+.dishType h4 {
   color: #EE9972;
   font-family: 'Karla';
-  font-size: 16;
+  font-size: 21px;
+  padding: 3px;
 }
 
-.card p {
+#dishContent {
+  padding: 10px;
+}
+
+#dishContent p {
   color: #495E57;
   font-family: 'Karla';
   font-size: 16;
+  text-align: left;
 }
+
+#delivery {
+  padding: 10px;
+  display: flex;
+}
+
+#delivery h5 {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 .mainContent {
   display: flex;
@@ -250,8 +275,6 @@ li {
   font-weight: bold;
   border-radius: 16px;
   border: none;
-  /* display: flex; */
-  /* padding: 100px; */
 }
 
 
@@ -357,14 +380,13 @@ li {
 .aboutContent {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 460px; */
+  padding: 10px;
 }
 
 .aboutLogoArea {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* padding-right: 535px; */
   text-align: start;
 }
 
@@ -374,7 +396,7 @@ li {
 }
 
 #aboutContext {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 #aboutHeadings h1 {
@@ -396,27 +418,42 @@ li {
   font-size: 20;
 }
 
+.imageArea {
+  padding: 10px;
+}
+
 .aboutImageArea {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 255px;
+  position: relative;
 }
 
-.aboutDisplayImage1 img{
-height: 310px;
-width: 280px;
-border-radius: 16px;
-/* position: absolute;
-top: 2850px; */
-}
-
-.aboutDisplayImage2 img{
-  height: 310px;
-  width: 280px;
+.aboutDisplayImage1 img {
+  display: flex;
+  flex-wrap: wrap;
+  height: 338px;
+  width: 276px;
   border-radius: 16px;
-  /* position: relative;
-  left: 80px; */
-  }
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 30px;
+  object-fit: cover;
+}
+
+.aboutDisplayImage2 img {
+  display: flex;
+  flex-wrap: wrap;
+  height: 338px;
+  width: 276px;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 2;
+  left: 210px;
+  top: -80px;
+  object-fit: cover;
+}
 
 
 /* ***************************Responsive Section Styling************************ */
@@ -484,6 +521,41 @@ top: 2850px; */
 @media screen and (max-width: 2500px) {
   .Specials {
     padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .Specials {
+    padding-bottom: 20px;
+  }
+}
+
+/* @media screen and (max-width: 1150px) {
+  .TestimonalsSection {
+    padding-top: 20px;
+  }
+} */
+
+@media screen and (max-width: 992px) {
+
+  .aboutImageArea,
+  .aboutDisplayImage1,
+  .aboutDisplayImage2,
+  .imageArea {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width :530px) {
+
+  .imageArea,
+  .aboutImageArea,
+  .aboutDisplayImage1,
+  .aboutDisplayImage2 {
+
+    object-fit: scale-down;
+    width: 50%;
+
   }
 }
 

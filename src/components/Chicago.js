@@ -18,6 +18,7 @@ const Chicago = () => {
 
                     </div>
                 </div>
+                <div className="">
                 <div className="aboutImageArea">
                     <div className="aboutDisplayImage1">
                         <img src="../images/chicago2.jpeg" id="aboutDisplayImage1" alt="Display"></img>
@@ -26,6 +27,8 @@ const Chicago = () => {
                         <img src="../images/chicago1.jpeg" id="aboutDisplayImage2" alt="Display"></img>
                     </div>
                 </div>
+                </div>
+                
             </div>
         </>
     )
