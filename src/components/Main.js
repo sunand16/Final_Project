@@ -5,6 +5,7 @@ import HomePage from "./Homepage";
 import Chicago from "./Chicago";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
+import BookingPage from "./BookingPage";
 
 const Main = () => {
     return (
@@ -13,9 +14,9 @@ const Main = () => {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<HomePage />}></Route>
-                        <Route path="/booking" element={<BookingPage />}></Route>
                         <Route path="/about" element={<Chicago />}></Route>
-                        <Route path="/specials" element={<Specials />}></Route>
+                        <Route path="/menu" element={<Specials />}></Route>
+                        <Route path="/reservations" element={<BookingPage />}></Route>
                         <Route path="/testimonals" element={<CustomersSay />}></Route>
                     </Routes>
                 </BrowserRouter>
