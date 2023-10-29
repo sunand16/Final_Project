@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 
 
 const Nav = () => {
+  const handleClick =(e)=>{
+    e.preventDefault();
+    console.log("Link was clicked");
+    };
+
+    
     return (
         <nav>
             {/* <nav>This is Nav</nav> */}
@@ -15,7 +21,7 @@ const Nav = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/menu">Menu</Link></li>
-                <li><Link to="/reservations">Reservations</Link></li>
+                <li><Link to="/reservations" onClick={handleClick} >Reservations</Link></li>
                 <li><Link to="/#">Order Online</Link></li>
                 <li><Link to="/#">Login</Link></li>
             </ul>
