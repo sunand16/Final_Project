@@ -1,12 +1,10 @@
 import React from "react";
-import Nav from "./Nav";
+import Main from "./Main";
 
 const Header = () => {
     return (
         <header>
-            {/* <header>This is Header</header> */}
-            {/* <img src="../images/LittleLemonLogo.jpeg" id ="headerLogo" alt="Logo"/> */}
-            <Nav />
+            <Main/>
         </header>
     )
 }

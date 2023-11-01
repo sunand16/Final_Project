@@ -1,8 +1,8 @@
 //Call to action would be section with RESERVE A TABLE button section under nav
 //import React from "react";
 
-import { useNavigate,Route,Routes } from "react-router-dom";
-import BookingPage from "./BookingPage";
+// import { useNavigate,Route,Routes } from "react-router-dom";
+// import BookingPage from "./BookingPage";
 
 // import { useEffect } from "react";
 // import BookingForm from "./BookingForm";
