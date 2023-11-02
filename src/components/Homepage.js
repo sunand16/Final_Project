@@ -14,12 +14,12 @@ import Chicago from "./Chicago";
 const HomePage = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <CallToAction />
             <Specials />
             <CustomersSay />
             <Chicago />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 

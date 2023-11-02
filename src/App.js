@@ -4,8 +4,9 @@ import React from "react";
 //import Header from './components/Header';
 //import Nav from './components/Nav';
 // import Main from './components/Main';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 import HomePage from './components/Homepage';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
      <Nav/>
      <Main />
      <Footer/> */}
-
+      <Header/>
      <HomePage/>
+     <Footer />
   </>
   );
 }
