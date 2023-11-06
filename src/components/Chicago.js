@@ -4,7 +4,7 @@
 const Chicago = () => {
     return (
         <>
-            <div className="AboutSection">
+            <div className="AboutSection" id="about">
                 <div className="aboutSectionArea">
 
                     <div className="aboutContent">

@@ -2,8 +2,7 @@
 //Home button in NAV should redirect to this page
 //All components will be added here and this acts as the home page
 
-import Footer from "./Footer";
-import Header from "./Header";
+
 import CallToAction from "./CallToAction";
 import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
@@ -14,12 +13,10 @@ import Chicago from "./Chicago";
 const HomePage = () => {
     return (
         <>
-            {/* <Header /> */}
             <CallToAction />
             <Specials />
             <CustomersSay />
             <Chicago />
-            {/* <Footer /> */}
         </>
     )
 

@@ -11,7 +11,7 @@ import Nav from "./Nav";
 
 const Main = () => {
     return (
-        <main>
+        <>
         <Nav/>
             <Routes>
                 <Route path="/" element />
@@ -20,7 +20,7 @@ const Main = () => {
                 <Route path="/reservations" element={<BookingPage />} />
                 <Route path="/testimonals" element={<CustomersSay />} />
             </Routes>
-        </main>
+        </>
     )
 }
 export default Main;

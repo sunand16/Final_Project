@@ -3,7 +3,7 @@
 
 const Specials = () => {
     return (
-        <div className="Specials">
+        <div className="Specials" id="menu">
             <div className="SpecialsSection">
                 <div className="mainContent">
                     <div className="mainContextArea">
