@@ -26,7 +26,7 @@ const Nav = () => {
                 <li><Link to="/about" smooth>About</Link></li>
                 <li><Link to="/menu" smooth>Menu</Link></li>
                 {/* <li><Link to="/reservations" onClick={handleClick} >Reservations</Link></li> */}
-                <li><Link to="/reservations" target="_blank" >Reservations</Link></li>
+                <li><Link to="/reservations"  >Reservations</Link></li>
                 <li><Link to="/#">Order Online</Link></li>
                 <li><Link to="/#">Login</Link></li>
             </ul>
