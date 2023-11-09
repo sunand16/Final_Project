@@ -31,7 +31,7 @@ const Nav = () => {
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="#about" id='#about'  onClick={handleClick}>About</Link></li>
                     <li><Link to="#menu" id='#menu' onClick={handleClick}>Menu</Link></li>
-                    <li><Link to="/reservations"  target="_blank">Reservations</Link></li>
+                    <li><Link to="/booking" >Reservations</Link></li>
                     <li><Link to="/#">Order Online</Link></li>
                     <li><Link to="/#">Login</Link></li>
                 </ul>
