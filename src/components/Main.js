@@ -8,12 +8,16 @@ import BookingPage from "./BookingPage";
 
 const Main = () => {
     return (
-        <>
+        <div id="MainSection">
+
             <Routes>
-                <Route path="/" element={<HomePage/>}></Route>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/home" element={<HomePage />}></Route>
                 <Route path="/booking" element={<BookingPage />} />
             </Routes>
-        </>
+
+
+        </div>
     )
 }
 export default Main;

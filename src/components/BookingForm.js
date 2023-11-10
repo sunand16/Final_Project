@@ -25,7 +25,7 @@ const BookingForm = () => {
       };
     return (
         <>
-            <div className="form-section" id="reservations">
+            <div className="form-section" >
                 <form onSubmit={handleSubmit}>
                     <fieldset>
                         <label htmlFor="res-date">Choose date</label>

@@ -72,6 +72,9 @@ li {
 
 /* **************Section Areas************** */
 
+#MainSection {
+  height: 2100px;
+}
 
 .ReservationSection {
   display: flex;
@@ -107,6 +110,7 @@ li {
   color: antiquewhite;
   text-align: center;
 }
+
 
 
 /* **********Component Stylings************* */
@@ -381,10 +385,11 @@ li {
   display: flex;
   justify-content: center;
 }
-.aboutSectionArea{
+
+.aboutSectionArea {
   display: flex;
   flex-wrap: wrap;
-flex-direction: row;
+  flex-direction: row;
   justify-content: center;
   position: relative;
 }
@@ -430,19 +435,20 @@ flex-direction: row;
   font-size: 20;
 }
 
-.aboutImageContent{
+.aboutImageContent {
   display: flex;
   padding: 100px;
   position: relative;
 
 }
-.aboutImageArea{
+
+.aboutImageArea {
   display: flex;
   flex-direction: row;
   padding: 100px;
 }
 
-#aboutImage1{
+#aboutImage1 {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
@@ -453,7 +459,8 @@ flex-direction: row;
   top: 90px;
   left: 30px;
 }
-#aboutImage2{
+
+#aboutImage2 {
   width: 50%;
   height: 300px;
   border-radius: 16px;
@@ -461,6 +468,32 @@ flex-direction: row;
   z-index: 2;
   left: 185px;
   top: -30px;
+}
+
+
+/*  ******************Booking Page Styling*************** */
+.BookingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section {
+  background-color: #495E57;
+  padding: inherit;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.form-section button {
+  /* float: right; */
+  background-color: #f4ce14;
+  color: black;
+  font-weight: bold;
+  border-radius: 16px;
+  border: none;
 }
 
 /* ***************************Responsive Section Styling************************ */
@@ -537,6 +570,7 @@ flex-direction: row;
 }
 
 @media screen and (max-width: 1600px) {
+
   .LogoArea,
   .displayImage {
     display: flex;
@@ -546,7 +580,9 @@ flex-direction: row;
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 500px) {
+
   .LogoArea,
   .displayImage {
     display: flex;
@@ -571,6 +607,7 @@ flex-direction: row;
     display: flex;
   }
 }
+
 @media screen and (max-width: 3755px) {
   .Specials {
     padding-top: 30px;
@@ -619,7 +656,7 @@ flex-direction: row;
   }
 }
 
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 400px) {
 
   .aboutImageContent,
   .aboutImageArea {

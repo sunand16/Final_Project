@@ -5,8 +5,10 @@ import React from "react";
 const BookingPage = () => {
     return (
         <>
-            <div className="BookingPage" id="booking">
-                <h2>Welcome to the BookingPage, Please go ahead and make the required Reservations</h2>
+            <div className="BookingPage" >
+                <h2>Find a table for any occasion</h2>
+                <img src=""></img>
+                <img src=""></img>
                 <BookingForm />
             </div>
         </>
