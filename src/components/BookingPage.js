@@ -7,7 +7,7 @@ const BookingPage = () => {
         <>
             <div className="BookingPage" >
                 <h2>Find a table for any occasion</h2>
-                <img src=""></img>
+                <img src="../images/reservations.jpg"></img>
                 <img src=""></img>
                 <BookingForm />
             </div>

@@ -476,6 +476,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-style: solid;
+}
+.BookingPage img{
+  height: 100%;
+  width: auto;
+  
 }
 
 .form-section {
