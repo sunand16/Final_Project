@@ -6,10 +6,17 @@ const BookingPage = () => {
     return (
         <>
             <div className="BookingPage" >
-                <h2>Find a table for any occasion</h2>
-                <img src="../images/reservations.jpg"></img>
-                <img src=""></img>
-                <BookingForm />
+                <div>
+                    <h2>Find a table for any occasion</h2>
+                    <div id="bookingImageSection">
+                        <img src="../images/reservations.jpg"></img>
+                        <img src="../images/reservations.jpg"></img>
+                    </div>
+
+                </div>
+                <div>
+                    <BookingForm />
+                </div>
             </div>
         </>
     )

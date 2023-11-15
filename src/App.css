@@ -72,9 +72,9 @@ li {
 
 /* **************Section Areas************** */
 
-#MainSection {
+/* #MainSection {
   height: 2100px;
-}
+} */
 
 .ReservationSection {
   display: flex;
@@ -475,13 +475,24 @@ li {
 .BookingPage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   border-style: solid;
+  background-color: #495E57;
+  color: #EDEFEE;
+  padding: 30px;
 }
-.BookingPage img{
+
+.BookingPage img {
+  padding: 20px;
   height: 100%;
-  width: auto;
-  
+  width: 400px;
+}
+
+#bookingImageSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .form-section {
@@ -493,13 +504,24 @@ li {
   flex-direction: row;
 }
 
+#formOptions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
 .form-section button {
-  /* float: right; */
   background-color: #f4ce14;
   color: black;
   font-weight: bold;
   border-radius: 16px;
   border: none;
+}
+
+#formElements{
+  display: flex;
+  flex-direction: column;
 }
 
 /* ***************************Responsive Section Styling************************ */
