@@ -1,8 +1,22 @@
 //Should be a re-direct page for RESERVE A TABLE button in CallToAction Component
 import BookingForm from "./BookingForm";
 import React from "react";
+import { useState } from "react";
 
 const BookingPage = () => {
+
+    //const [availableTimes , setAvailableTimes ] = useState([]);
+
+    // const handleChange=()=>{
+    //     setAvailableTimes(availableTimes);
+    // }
+    // const updateTimes =() => {
+    //     return availableTimes;
+
+    // }
+    // const initializeTimes =()=> {
+
+    // }
     return (
         <>
             <div className="BookingPage" >
@@ -15,7 +29,10 @@ const BookingPage = () => {
 
                 </div>
                 <div>
-                    <BookingForm />
+                    <BookingForm 
+                    // availableTimes
+                    // updateTimes={handleChange}
+                    />
                 </div>
             </div>
         </>
