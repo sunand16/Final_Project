@@ -2,22 +2,23 @@ import React from "react";
 import { useState } from "react";
 
 
-//{availableTimes,setAvailableTimes,updateTimes}
-const BookingForm = () => {
+
+const BookingForm = ({times,setTimes,handleTimes}) => {
 
     const [chooseDate, setDate] = useState("");
-    let [availableTimes, setAvailableTimes] = useState([]);
+   // const [availableTimes, setAvailableTimes] = useState([]);
     const [guests, setGuests] = useState("");
     const [occasion, setOccassion] = useState("");
-    //  updateTimes =() => {
-    //     setAvailableTimes(availableTimes);
-    //     updateTimes();
-    // }
-
-    let handleClick = () => {
-        availableTimes = setAvailableTimes(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
-
+   
+  const  handleTimesClick=()=>{
+    setTimes();
+    handleTimes();
+        
     }
+
+    // const handleClick = () => {
+    //     setAvailableTimes(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
+    // }
 
     const clearForm = () => {
         setDate("");
@@ -41,8 +42,8 @@ const BookingForm = () => {
                             <label htmlFor="res-date">Choose date</label>
                             <input type="date" value={chooseDate} onChange={(e) => { setDate(e.target.value); }} id="res-date" />
                             <label htmlFor="res-time">Choose time</label>
-                            <select id="res-time "  onClick={handleClick}>
-                                {availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                            <select id="res-time "  onClick={handleTimesClick}>
+                                {times.map((time, index) => (<option key={index}>{time}</option>))}
                             </select>
                             <label htmlFor="guests">Number of guests</label>
                             <input type="number" value={guests} onChange={(e) => { setGuests(e.target.value); }} placeholder="1" min="1" max="10" id="guests" />

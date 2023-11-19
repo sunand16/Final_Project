@@ -5,18 +5,19 @@ import { useState } from "react";
 
 const BookingPage = () => {
 
-    //const [availableTimes , setAvailableTimes ] = useState([]);
+    const [availableTimes , setAvailableTimes ] = useState([]);
+    
+    const handleClick = () => {
+        setAvailableTimes(['17:00', '18:00', '19:00', '20:00', '21:00','21.30', '22:00']);
+    }
 
-    // const handleChange=()=>{
-    //     setAvailableTimes(availableTimes);
-    // }
-    // const updateTimes =() => {
-    //     return availableTimes;
+    const updateTimes =() => {
+        return  setAvailableTimes(['17:00', '18:00', '19:00', '20:00', '21:00','21.30', '22:00']);
 
-    // }
-    // const initializeTimes =()=> {
-
-    // }
+    }
+    const initializeTimes =()=> {
+        availableTimes([]);
+    }
     return (
         <>
             <div className="BookingPage" >
@@ -30,8 +31,9 @@ const BookingPage = () => {
                 </div>
                 <div>
                     <BookingForm 
-                    // availableTimes
-                    // updateTimes={handleChange}
+                    times={availableTimes}
+                    setTimes={setAvailableTimes}
+                    handleTimes={handleClick}
                     />
                 </div>
             </div>
