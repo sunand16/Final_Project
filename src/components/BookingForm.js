@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 
-const BookingForm = ({times,setTimes,handleTimes}) => {
+const BookingForm = ({times,setTimes}) => {
 
     const [chooseDate, setDate] = useState("");
    // const [availableTimes, setAvailableTimes] = useState([]);
@@ -11,8 +11,12 @@ const BookingForm = ({times,setTimes,handleTimes}) => {
     const [occasion, setOccassion] = useState("");
    
   const  handleTimesClick=()=>{
+   // console.log(setTimes(times));
+  // dispatch({type:"update_times"});
+   
     setTimes();
-    handleTimes();
+    //handleTimes();
+    // setTimes();
         
     }
 
