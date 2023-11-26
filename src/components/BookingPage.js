@@ -4,46 +4,40 @@ import React, { useReducer } from "react";
 //import { useState } from "react";
 
 
-const  reducer=(availableTimes,action)=>{
-       switch(action.type){        
-           case 'updated_times':
+const reducer = (availableTimes, action) => {
+    switch (action.type) {
+        case 'updated_times':
             return {
-                // ...availableTimes,
-                newTimes:action.payload,
-            } 
-            default :
+                ...availableTimes,
+                newTimes: action.payload,
+            }
+        default:
             return {
                 availableTimes
             }
     }
-    
-}
-     //this will create the initial state for availableTimes
-     const initializeTimes = () => {
-        const initialTimes =['17:00','18:00','19:00','20:00','21:00','21.30','22:00'];
-        return initialTimes;
-    }
-        //this will change the availablkeTimes based on the selected date
-   
 
-const BookingPage = () => { 
-   
-    const [availableTimes,dispatch]=useReducer(reducer,{},initializeTimes);
+}
+//this will create the initial state for availableTimes
+const initializeTimes = () => {
+    const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '21.30', '22:00'];
+    return availableTimes;
+}
+
+
+const BookingPage = () => {
+    const updateTimes = () => {
+        const updatedTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+        //return availableTimes;
+        dispatch({type:'updated_times',payload:updatedTimes});
+    }
+    // const handleClick =()=>{
+    //     dispatch({type:'updated_times',payload:availableTimes});
+    // }
+
     //update the useState to reducer
-   // const [availableTimes, setAvailableTimes] = useState([]);
-
-   const updateTimes = () => {
-    const  updatedTimes =['17:00','18:00','19:00','20:00','21:00','22:00'];
-   // return updatedTimes;    
-   dispatch({type:'updated_times',payload:updatedTimes});
-}
-
-    const handleClick = () => {
-        dispatch({type:'updated_times'});
-    }
-
-   
-   
+    // const [availableTimes, setAvailableTimes] = useState([]);
+    const [availableTimes, dispatch] = useReducer(reducer, {}, initializeTimes, updateTimes);
     return (
         <>
             <div className="BookingPage" >
@@ -58,8 +52,9 @@ const BookingPage = () => {
                 <div>
                     <BookingForm
                         times={availableTimes}
-                        setTimes={updateTimes}
-                        handleTimes={handleClick}
+                        handleTimes={updateTimes}
+                       // handleTimes={handleClick}
+                        
                     />
                 </div>
             </div>
