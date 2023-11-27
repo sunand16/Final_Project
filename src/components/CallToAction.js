@@ -3,7 +3,7 @@
 
 
 const CallToAction = () => {
-  const handleClick=(e)=>{
+  const handleClick = (e) => {
     e.preventDefault();
     console.log("Reserve a Table Button Clicked..")
   }

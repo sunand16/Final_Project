@@ -519,7 +519,7 @@ li {
   border: none;
 }
 
-#formElements{
+#formElements {
   display: flex;
   flex-direction: column;
 }

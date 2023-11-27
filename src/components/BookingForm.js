@@ -3,23 +3,24 @@ import { useState } from "react";
 
 
 
-const BookingForm = ({times,handleTimes}) => {
+const BookingForm = ({ times, handleTimes, retrieveTimes }) => {
 
     const [chooseDate, setDate] = useState("");
-   // const [availableTimes, setAvailableTimes] = useState([]);
+    // const [availableTimes, setAvailableTimes] = useState([]);
     const [guests, setGuests] = useState("");
     const [occasion, setOccassion] = useState("");
-   
-    const availableTimes =Array.from(times);
-    
 
-  const  handleTimesClick=()=>{  
-    console.log("times:"+ Array.isArray(times));  
-   console.log("availableTimes:"+Array.isArray(availableTimes));      
-   const newTimes=[...availableTimes];    
-  console.log("newTimes:"+(newTimes));
-  handleTimes();
-   // handleTimes();     
+    const availableTimes = Array.from(times);
+
+
+    const handleTimesClick = () => {
+        console.log("times:" + Array.isArray(times));
+        console.log("availableTimes:" + Array.isArray(availableTimes));
+        const newTimes = [...availableTimes];
+        console.log("newTimes:" + (newTimes));
+        handleTimes();
+        retrieveTimes();
+        // handleTimes();     
     }
 
     // const handleClick = () => {
@@ -48,8 +49,8 @@ const BookingForm = ({times,handleTimes}) => {
                             <label htmlFor="res-date">Choose date</label>
                             <input type="date" value={chooseDate} onChange={(e) => { setDate(e.target.value); }} id="res-date" />
                             <label htmlFor="res-time">Choose time</label>
-                            <select id="res-time "  onClick={handleTimesClick}>
-                             {availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                            <select id="res-time " onClick={handleTimesClick}>
+                                {availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
                             </select>
                             <label htmlFor="guests">Number of guests</label>
                             <input type="number" value={guests} onChange={(e) => { setGuests(e.target.value); }} placeholder="1" min="1" max="10" id="guests" />

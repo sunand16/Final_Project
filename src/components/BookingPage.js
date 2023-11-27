@@ -27,17 +27,18 @@ const initializeTimes = () => {
 
 const BookingPage = () => {
     const updateTimes = () => {
-        const updatedTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
-        //return availableTimes;
-        dispatch({type:'updated_times',payload:updatedTimes});
+        const updatedTimes = ['17:00', '18:00', '19:00', '20:30', '21:00', '22:00'];
+        return availableTimes;
+        //dispatch({type:'updated_times',payload:updatedTimes});
     }
-    // const handleClick =()=>{
-    //     dispatch({type:'updated_times',payload:availableTimes});
-    // }
+    const handleNewTimesUpdate = () => {
+        dispatch({ type: 'updated_times', payload: availableTimes });
+    }
 
     //update the useState to reducer
     // const [availableTimes, setAvailableTimes] = useState([]);
-    const [availableTimes, dispatch] = useReducer(reducer, {}, initializeTimes, updateTimes);
+    // const [availableTimes, dispatch] = useReducer(reducer, {initialTimes:initializeTimes()}, {initializeTimes, updateTimes});
+    const [availableTimes, dispatch] = useReducer(reducer, {}, initializeTimes);
     return (
         <>
             <div className="BookingPage" >
@@ -53,8 +54,7 @@ const BookingPage = () => {
                     <BookingForm
                         times={availableTimes}
                         handleTimes={updateTimes}
-                       // handleTimes={handleClick}
-                        
+                        retrieveTimes={handleNewTimesUpdate}
                     />
                 </div>
             </div>

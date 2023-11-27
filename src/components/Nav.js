@@ -8,16 +8,17 @@ import { Link } from "react-router-dom";
 
 
 const Nav = () => {
-       const handleClick=(e)=>{
-        console.log(e.target.id+"link clicked");
-      let element=e.target.id;
+    const handleClick = (e) => {
+        console.log(e.target.id + "link clicked");
+        let element = e.target.id;
         console.log(element);
         document.querySelector(element).scrollIntoView({
-            behavior:"smooth"
+            behavior: "smooth"
         });
     }
     useEffect(() => {
-        window.history.scrollRestoration = 'manual'}, []);
+        window.history.scrollRestoration = 'manual'
+    }, []);
 
     return (
         <>
@@ -25,7 +26,7 @@ const Nav = () => {
                 <ul className="headerNav">
                     <li><img src="../images/LittleLemonLogo.jpeg" id="siteLogo" alt="Logo" /></li>
                     <li><Link to="/home">Home</Link></li>
-                    <li><Link to="#about" id='#about'  onClick={handleClick}>About</Link></li>
+                    <li><Link to="#about" id='#about' onClick={handleClick}>About</Link></li>
                     <li><Link to="#menu" id='#menu' onClick={handleClick}>Menu</Link></li>
                     <li><Link to="/booking" >Reservations</Link></li>
                     <li><Link to="/#">Order Online</Link></li>
