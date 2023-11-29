@@ -4,7 +4,7 @@ import React, { useReducer } from "react";
 //import { useState } from "react";
 
 
-const reducer = (availableTimes, action) => {
+const updateTimes = (availableTimes, action) => {
     switch (action.type) {
         case 'updated_times':
             return {
@@ -20,25 +20,25 @@ const reducer = (availableTimes, action) => {
 }
 //this will create the initial state for availableTimes
 const initializeTimes = () => {
-    const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '21.30', '22:00'];
-    return availableTimes;
+    //const initialTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '21.30', '22:00'];
+    return ['17:00', '18:00', '19:00', '20:00', '21:00', '21.30', '22:00'];
 }
 
 
 const BookingPage = () => {
-    const updateTimes = () => {
-        const updatedTimes = ['17:00', '18:00', '19:00', '20:30', '21:00', '22:00'];
-        return availableTimes;
-        //dispatch({type:'updated_times',payload:updatedTimes});
-    }
-    const handleNewTimesUpdate = () => {
-        dispatch({ type: 'updated_times', payload: availableTimes });
+    // const updateTimes = () => {
+    //     const updatedTimes = ['17:00', '18:00', '19:00', '20:30', '21:00', '22:00'];
+    //     return updatedTimes;
+    //     //dispatch({type:'updated_times',payload:updatedTimes});
+    // }
+    const handleDateChange = (selectedDate) => {
+        dispatch({ type: 'updated_times', payload: initializeTimes() });
     }
 
     //update the useState to reducer
     // const [availableTimes, setAvailableTimes] = useState([]);
     // const [availableTimes, dispatch] = useReducer(reducer, {initialTimes:initializeTimes()}, {initializeTimes, updateTimes});
-    const [availableTimes, dispatch] = useReducer(reducer, {}, initializeTimes);
+    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
     return (
         <>
             <div className="BookingPage" >
@@ -53,8 +53,10 @@ const BookingPage = () => {
                 <div>
                     <BookingForm
                         times={availableTimes}
-                        handleTimes={updateTimes}
-                        retrieveTimes={handleNewTimesUpdate}
+                        // handleTimes={updateTimes}
+                        // retrieveTimes={handleNewTimesUpdate}
+                        updatedTimes={availableTimes.newTimes}
+                        handleDateChange={handleDateChange}
                     />
                 </div>
             </div>
