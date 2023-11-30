@@ -9,26 +9,23 @@ const BookingForm = ({ times, handleDateChange, updatedTimes }) => {
     // const [availableTimes, setAvailableTimes] = useState([]);
     const [guests, setGuests] = useState("");
     const [occasion, setOccassion] = useState("");
-
-   console.log(updatedTimes);
-    //console.log("updatedTimes:" + Array.isArray(updatedTimes));
+    let newUpdatedTimes = [updatedTimes];
+    //console.log(updatedTimes);
+    //console.log("newUpdatedTimes:" + Array.isArray(newUpdatedTimes));
 
     let availableTimes = Array.from(times);
-    // console.log(availableTimes);
+    //console.log("times:"+ times);
     // const newAvailableTimes = [updatedTimes];
 
     const handleTimesClick = () => {
         //     console.log("times:" + Array.isArray(times));
         //    console.log("availableTimes:" + Array.isArray(availableTimes));
         const newAvailableTimes = [updatedTimes];
-        console.log("inside handleTimesClick:" + (newAvailableTimes));
+        // console.log("newAvailableTimes:" + Array.isArray(newAvailableTimes));
+        // console.log("inside handleTimesClick:" + (newAvailableTimes));
+        console.log("new updated Times:" + (newAvailableTimes));
 
-        if (newAvailableTimes.length === 0) {
-            return availableTimes;
-        }
-        else {
-            return availableTimes = newAvailableTimes;
-        }
+
 
         // handleTimes();
         // retrieveTimes();
@@ -70,9 +67,9 @@ const BookingForm = ({ times, handleDateChange, updatedTimes }) => {
                             <input type="date" value={chooseDate} onChange={handleDateUpdates} id="res-date" />
                             <label htmlFor="res-time">Choose time</label>
                             <select id="res-time " onClick={handleTimesClick} >
-                                {/* (updatedTimes.length==0 ?{availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
-                             :{updatedTimes.map((time, index) => (<option key={index}>{time}</option>))}) */}
-                                {availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                                {newUpdatedTimes.length === 0 ? availableTimes.map((time, index) => (<option key={index}>{time}</option>))
+                                    : newUpdatedTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                                {/* {availableTimes.map((time, index) => (<option key={index}>{time}</option>))} */}
                                 {/* {updatedTimes.map((time, index) => (<option key={index}>{time}</option>))} */}
                             </select>
                             <label htmlFor="guests">Number of guests</label>
