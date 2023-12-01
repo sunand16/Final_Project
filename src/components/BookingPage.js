@@ -32,6 +32,7 @@ const BookingPage = () => {
     //     //dispatch({type:'updated_times',payload:updatedTimes});
     // }
     const handleDateChange = (selectedDate) => {
+        // const updatedTimes = ['17:00', '18:00', '19:00', '20:30', '21:00', '22:00'];
         dispatch({ type: 'updated_times', payload: initializeTimes() });
     }
 

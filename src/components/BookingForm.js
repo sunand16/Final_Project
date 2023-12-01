@@ -9,28 +9,36 @@ const BookingForm = ({ times, handleDateChange, updatedTimes }) => {
     // const [availableTimes, setAvailableTimes] = useState([]);
     const [guests, setGuests] = useState("");
     const [occasion, setOccassion] = useState("");
-    let newUpdatedTimes = [updatedTimes];
+    
+    // let newTimesFromProps = updatedTimes;
+    // console.log("this is times props:"+times);
+    // console.log("this is updatedTimes props:"+updatedTimes);
+    // console.log("initially received updatedTimes:" + (typeof updatedTimes ==='object'));
+
+    // let newUpdatedTimes = updatedTimes.split;
     //console.log(updatedTimes);
     //console.log("newUpdatedTimes:" + Array.isArray(newUpdatedTimes));
 
     let availableTimes = Array.from(times);
+    console.log("availableTimes:" + availableTimes);
     //console.log("times:"+ times);
-    // const newAvailableTimes = [updatedTimes];
+    let newAvailableTimes = [updatedTimes];
+    //    let newAvailableTimes = Array.from(updatedTimes);
+    console.log(" is newAvailableTimes an array:" + Array.isArray(newAvailableTimes));
+    console.log("newAvailableTimes:" + newAvailableTimes);
 
     const handleTimesClick = () => {
         //     console.log("times:" + Array.isArray(times));
         //    console.log("availableTimes:" + Array.isArray(availableTimes));
-        const newAvailableTimes = [updatedTimes];
+        //const newAvailableTimes = [updatedTimes];        
         // console.log("newAvailableTimes:" + Array.isArray(newAvailableTimes));
         // console.log("inside handleTimesClick:" + (newAvailableTimes));
-        console.log("new updated Times:" + (newAvailableTimes));
-
-
-
+        //console.log("new updated Times:" + (newAvailableTimes));
         // handleTimes();
         // retrieveTimes();
         // handleTimes(); 
-        // handleDateChange();    
+        // handleDateChange();   
+
     }
 
     const handleDateUpdates = (e) => {
@@ -67,10 +75,10 @@ const BookingForm = ({ times, handleDateChange, updatedTimes }) => {
                             <input type="date" value={chooseDate} onChange={handleDateUpdates} id="res-date" />
                             <label htmlFor="res-time">Choose time</label>
                             <select id="res-time " onClick={handleTimesClick} >
-                                {newUpdatedTimes.length === 0 ? availableTimes.map((time, index) => (<option key={index}>{time}</option>))
-                                    : newUpdatedTimes.map((time, index) => (<option key={index}>{time}</option>))}
-                                {/* {availableTimes.map((time, index) => (<option key={index}>{time}</option>))} */}
-                                {/* {updatedTimes.map((time, index) => (<option key={index}>{time}</option>))} */}
+                                {newAvailableTimes.length === 0 ? availableTimes.map((time, index) => (<option key={index}>{time}</option>))
+                                    : newAvailableTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                                {/* {availableTimes.map((time, index) => (<option key={index}>{time}</option>))}
+                                {updatedTimes.map((time, index) => (<option key={index}>{time}</option>))} */}
                             </select>
                             <label htmlFor="guests">Number of guests</label>
                             <input type="number" value={guests} onChange={(e) => { setGuests(e.target.value); }} placeholder="1" min="1" max="10" id="guests" />
