@@ -16,16 +16,27 @@ const BookingForm = ({ times, handleDateChange, updatedTimes }) => {
     // console.log("initially received updatedTimes:" + (typeof updatedTimes ==='object'));
 
     // let newUpdatedTimes = updatedTimes.split;
-    //console.log(updatedTimes);
-    //console.log("newUpdatedTimes:" + Array.isArray(newUpdatedTimes));
+    // console.log(updatedTimes);
+    // console.log("updatedTimes:" + Array.isArray(updatedTimes));
 
-    let availableTimes = Array.from(times);
-    console.log("availableTimes:" + availableTimes);
+    
+    //console.log("availableTimes:" + availableTimes);
     //console.log("times:"+ times);
-    let newAvailableTimes = [updatedTimes];
+
+    //converting prop objects to arrays
+    let availableTimes = Array.from(times);
+    let newAvailableTimes = [];
+    for (let value in updatedTimes){
+         newAvailableTimes.push(updatedTimes[value]);
+    }
+    
+    // let newAvailableTimes=[];
+    // newAvailableTimes.push(Object.values(updatedTimes));
+    // console.log(newAvailableTimes);
+    // console.log("newAvailableTimes after converting to array:" + Array.isArray(newAvailableTimes));
     //    let newAvailableTimes = Array.from(updatedTimes);
-    console.log(" is newAvailableTimes an array:" + Array.isArray(newAvailableTimes));
-    console.log("newAvailableTimes:" + newAvailableTimes);
+    // console.log(" is newAvailableTimes an array:" + Array.isArray(newAvailableTimes));
+    // console.log("newAvailableTimes:" + newAvailableTimes);
 
     const handleTimesClick = () => {
         //     console.log("times:" + Array.isArray(times));
